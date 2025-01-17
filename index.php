@@ -1,4 +1,4 @@
-<!-- contact.php -->
+<!-- index.php -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'] ?? '';
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     fputcsv($file, $data);
     fclose($file);
 
-    header('Location: thank_you.html');
+    header('Location: index.html');
     exit();
 }
 ?>
